@@ -1,0 +1,188 @@
+@import "variables";
+
+.wrapper {
+  padding-top: 30px;
+  min-height: 100vh;
+}
+
+.caption-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 3px;
+  background-color: $primary;
+  box-shadow: 2px 2px 5px $primary;
+  height: 150px;
+  .logo {
+    position: relative;
+    padding-left: 20px;
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      position: absolute;
+      top: 10px;
+      left: 13px;
+    }
+  }
+
+  .buttons {
+    padding: 32px 10px;
+    text-align: right;
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+.wrapper-customers {
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: calc(100vh - 180px);
+  .customers,
+  .posts,
+  .info {
+    display: inline-block;
+  }
+
+  .customers,
+  .info {
+    width: 25%;
+    background-color: $primary;
+    margin: 3px;
+    box-shadow: 2px 2px 5px $primary;
+  }
+
+  .posts {
+    width: 50%;
+    padding: 10px;
+    .post_item {
+      margin: 0 0 10px 0;
+      padding: 10px 5px;
+      border: 2px $secondary-button-hover solid;
+      box-shadow: 2px 2px 5px $secondary;
+      .caption {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .content {
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        text-align: right;
+        a {
+          color: $font-primary;
+          text-decoration: none;
+          display: inline-block;
+          padding-left: 22px;
+          margin: 0 0 0 10px;
+          position: relative;
+          transition: color .2s ease;
+          &:hover {
+            color: $primary;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            left: 0;
+            margin-top: -10px;
+          }
+        }
+
+        a.edit {
+          &:before {
+            background: url("../../images/buttons/edit.png");
+            background-size: contain;
+          }
+        }
+
+        a.delete {
+          &:before {
+            background: url("../../images/buttons/delete.png");
+            background-size: contain;
+
+          }
+        }
+
+        a.edit.disabled,
+        a.delete.disabled {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .customers {
+    padding: 10px 15px;
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .users_item {
+      padding: 0 30px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      position: absolute;
+      top: 10px;
+      left: 35px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  .info {
+    padding: 10px 15px;
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: $font-primary;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      color: $font-primary;
+      text-align: justify;
+    }
+  }
+}
+
+.post_popup {
+  background-color: $primary;
+  max-width: 600px;
+  width: 80%;
+  padding: 30px;
+  input, textarea {
+    width: 100%;
+  }
+
+  textarea {
+    padding: 10px;
+  }
+
+  .label {
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  .buttons {
+    text-align: right;
+    padding: 20px 10px 0 0;
+  }
+}
+

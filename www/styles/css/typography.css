@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+.primary,
+.secondary {
+  color: #424242;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color .2s ease; }
+
+.primary {
+  background-color: #1497c7; }
+  .primary:hover {
+    background-color: #147699; }
+
+.secondary {
+  margin: 0 0 0 15px;
+  background-color: #e3e3e3; }
+  .secondary:hover {
+    background-color: #cccccc; }
+
+.view_posts {
+  display: inline-block;
+  text-decoration: none;
+  color: #424242;
+  border-radius: 15px;
+  width: 80px;
+  height: 25px;
+  border: 2px solid #424242;
+  text-align: center;
+  padding: 2px;
+  background-color: #1497c7;
+  transition: background-color .2s ease; }
+  .view_posts:hover {
+    background-color: #147699; }
+
+/*# sourceMappingURL=typography.css.map */

@@ -1,0 +1,88 @@
+form .log_wrapper {
+  text-align: center;
+  max-width: 600px;
+  margin: 350px auto;
+  padding: 30px 100px;
+  background-color: #0eb533; }
+form .label {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 5px 90px; }
+form input {
+  border: 2px solid;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  min-width: 125px;
+  padding: 0.5rem;
+  transition: border-color 0.5s ease-out; }
+  form input::placeholder {
+    font-size: 12px; }
+form input:optional {
+  border-color: gray; }
+form input:required:valid {
+  border-color: green; }
+form input:invalid {
+  border-color: red; }
+form input:required:focus:valid {
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+  background-size: 25px; }
+form input:focus:invalid {
+  background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+  background-size: 25px; }
+form .toggler-wrapper {
+  display: block;
+  width: 45px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  margin: 0 0 0 90px; }
+form .toggler-wrapper input[type="checkbox"] {
+  display: none; }
+form .toggler-wrapper input[type="checkbox"]:checked + .toggler-slider {
+  background-color: #1497c7; }
+form .toggler-wrapper .toggler-slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease; }
+form .toggler-wrapper .toggler-knob {
+  position: absolute;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease; }
+form .toggler-wrapper.style-1 input[type="checkbox"]:checked + .toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px); }
+form .toggler-wrapper.style-1 .toggler-knob {
+  width: calc(25px - 6px);
+  height: calc(25px - 6px);
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  background-color: #fff; }
+form .notice {
+  color: #c92812;
+  font-size: 16px;
+  margin: 20px 0 0 0;
+  position: relative; }
+  form .notice:before {
+    content: '*';
+    font-size: 20px; }
+form input[type="submit"].primary {
+  background-color: #1497c7;
+  color: #424242;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 20px 0 0 0;
+  transition: background-color .2s ease; }
+  form input[type="submit"].primary:hover {
+    background-color: #147699; }
+
+/*# sourceMappingURL=log.css.map */

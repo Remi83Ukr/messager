@@ -1,0 +1,20 @@
+@import "reset";
+@import "variables";
+@import "typography";
+@import "log";
+@import "post";
+
+body {
+  background: $light-grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: $font-primary;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hide {
+  display: none;
+}
